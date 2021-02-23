@@ -8,7 +8,7 @@ repository: https://github.com/rushio-consulting/flutter_camera_ml_vision
 homepage: https://rushio-consulting.fr
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -19,7 +19,8 @@ dependencies:
   path_provider: ^1.6.18
   pedantic: ^1.9.0
   device_info: ^0.4.2+8
-  camera: ^0.5.8+7
+  # camera: ^0.5.8+7
+  camera: ^0.7.0+2
 
 dev_dependencies:
   flutter_test:
