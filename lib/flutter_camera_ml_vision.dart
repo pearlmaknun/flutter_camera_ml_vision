@@ -274,7 +274,8 @@ class CameraMlVisionState<T> extends State<CameraMlVision<T>>
     }
 
     Widget cameraPreview = AspectRatio(
-      aspectRatio: _cameraController.value.isInitialized ? _cameraController.value.aspectRatio : 1,
+      //aspectRatio: _cameraController.value.isInitialized ? _cameraController.value.aspectRatio : 1,
+      aspectRatio: _cameraController.value.isInitialized ? _cameraController.value.previewSize.height / _cameraController.value.previewSize.width : 1,
       child: _isStreaming
           ? CameraPreview(
         _cameraController,
@@ -297,7 +298,7 @@ class CameraMlVisionState<T> extends State<CameraMlVision<T>>
         fit: BoxFit.cover,
         child: SizedBox(
           width: _cameraController.value.previewSize.height *
-              _cameraController.value.aspectRatio,
+              (_cameraController.value.previewSize.height / _cameraController.value.previewSize.width),
           height: _cameraController.value.previewSize.height,
           child: cameraPreview,
         ),

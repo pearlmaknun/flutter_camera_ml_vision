@@ -18,12 +18,10 @@ packages:
   camera:
     dependency: "direct main"
     description:
-      path: "."
-      ref: tempdev
-      resolved-ref: "772b2f5130c651627c07798412a6ea9884b51cda"
-      url: "https://github.com/pearlmaknun/pearlmaknun-camera.git"
-    source: git
-    version: "0.6.3+1"
+      name: camera
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.7.0+2"
   camera_platform_interface:
     dependency: transitive
     description:
