@@ -20,15 +20,15 @@ dependencies:
   pedantic: ^1.9.0
   device_info: ^0.4.2+8
   # camera: ^0.5.8+7
-  # camera: ^0.7.0+2
+  camera: ^0.7.0+2
   # camera: ^0.6.4+5
-  camera: ^0.6.3+1
+  # camera: ^0.6.3+1
 
-dependency_overrides:
-  camera:
-    git:
-      url: https://github.com/pearlmaknun/pearlmaknun-camera.git
-      ref: tempdev
+#dependency_overrides:
+#  camera:
+#    git:
+#      url: https://github.com/pearlmaknun/pearlmaknun-camera.git
+#      ref: tempdev
 
 dev_dependencies:
   flutter_test:
