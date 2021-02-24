@@ -24,6 +24,12 @@ dependencies:
   # camera: ^0.6.4+5
   camera: ^0.6.3+1
 
+dependency_overrides:
+  camera:
+    git:
+      url: https://github.com/pearlmaknun/pearlmaknun-camera.git
+      ref: tempdev
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
